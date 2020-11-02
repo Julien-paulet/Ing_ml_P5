@@ -1,0 +1,30 @@
+Projet de 60. 
+Objectif : Le torché en 2 semaines max.
+
+Step 1)
+	Comment faire du supervisé avec ces données ? X
+
+Step 2) 
+	Analyses des données recquises pour effectuer le projet X
+	Requêtes SQL sur https://data.stackexchange.com/stackoverflow/query/new X
+	Requête : 
+	SELECT *
+	FROM Posts
+	WHERE AcceptedAnswerId is not null
+	AND Tags is not null
+	AND ClosedDate >= '20180101'
+	
+Step 3)
+	Réflexion sur comment sortir plusieurs catégories (chaque tag)
+		-Ici on va faire comme dans le projet avec les images, Extraction de features du text puis BoW ou un truc du genre, ce sera plus clair dans le code
+	
+Step 4)
+	Preprocess des données textuelles comme dans le projet Data Scientist (reprendre le code)
+	Passer d'abord par TF-IDF et TSNE puis par Word2vec pour proposer deux algo
+	Ensuite Clustering et Random Forest
+
+Step 5) 
+	Deploy in production via API simplist (doit pouvoir reprendre un peu du code déjà fait
+	
+Step 6)
+	Rapport et ppt
